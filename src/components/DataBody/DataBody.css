@@ -1,0 +1,13 @@
+:root {
+  --text: #fff;
+  --highlight: #fa9046;
+}
+.DataBody {
+  height: 45vh;
+  width: 70vw;
+  border: 5px solid var(--highlight);
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 1em;
+}

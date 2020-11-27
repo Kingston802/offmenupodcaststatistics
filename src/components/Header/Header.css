@@ -1,0 +1,16 @@
+:root {
+  --text: #fff;
+  --highlight: #fa9046;
+}
+.logo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 5em;
+  text-shadow: 
+    -1px 1px 0px var(--highlight),
+    1px  1px var(--highlight), 
+    -1px  1px var(--highlight), 
+    1px -1px var(--highlight), 
+    -1px -1px var(--highlight),
+    -3px 3px 0px var(--highlight);
+  color: var(--text);
+}
