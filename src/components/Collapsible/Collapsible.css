@@ -1,1 +1,6 @@
-.Collapsible {}
+.options {
+  display: none
+}
+.open {
+  display: block;
+}

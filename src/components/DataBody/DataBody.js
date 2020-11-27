@@ -1,18 +1,15 @@
 import React from 'react';
 import Collapsible from '../Collapsible/Collapsible';
-// import PropTypes from 'prop-types';
 import './DataBody.css';
 
 const DataBody = () => (
   <div className="DataBody">
     <div>
       <Collapsible title="Courses" values={ ['Amuse-Bouche', 'Water', 'Starter', 'Main', 'Side', 'Drink', 'Dessert'] }></Collapsible>
+      <Collapsible title="Cultures" values={ ['Indian', 'French', 'Italian', 'American'] }></Collapsible>
+      <Collapsible title="Graph" values={ ['Bar', 'Pie', 'Dot'] }></Collapsible>
     </div>
   </div>
 );
-
-DataBody.propTypes = {};
-
-DataBody.defaultProps = {};
 
 export default DataBody;
