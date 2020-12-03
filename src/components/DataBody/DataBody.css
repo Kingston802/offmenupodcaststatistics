@@ -10,5 +10,11 @@
   margin: 0 auto;
   text-align: left;
   padding: 1em;
-  /* overflow: hidden; */
+  overflow: hidden;
+}
+
+button {
+  border: 2px solid var(--highlight);
+  background-color: var(--text);
+  border-radius: 5px;
 }
