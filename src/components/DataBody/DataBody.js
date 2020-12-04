@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Collapsible from '../Collapsible/Collapsible';
+import Graph from '../Graph'
 import './DataBody.css';
 
 function DataBody() { 
@@ -9,9 +10,6 @@ function DataBody() {
 
   const loadGraph = () => {
     console.table(episodes);
-    // get info from options 
-
-    // produce graph
   };
 
   useEffect(() => {
@@ -52,12 +50,15 @@ function DataBody() {
   }, []);
 
   return (
-  <div className="DataBody">
-    <Collapsible title="Courses" values={ ['Amuse-Bouche', 'Water', 'Starter', 'Main', 'Side', 'Drink', 'Dessert'] }></Collapsible>
-    <Collapsible title="Cultures" values={ ['Indian', 'French', 'Italian', 'American'] }></Collapsible>
-    <Collapsible title="Graph" values={ ['Bar', 'Pie', 'Dot'] }></Collapsible>
-    <button onClick={ loadGraph }>Graph</button>
-  </div>
+  <>
+    <Graph></Graph>
+    <div className="DataBody">
+      <Collapsible title="Courses" values={ ['Amuse-Bouche', 'Water', 'Starter', 'Main', 'Side', 'Drink', 'Dessert'] }></Collapsible>
+      <Collapsible title="Cultures" values={ ['Indian', 'French', 'Italian', 'American'] }></Collapsible>
+      <Collapsible title="Graph" values={ ['Bar', 'Pie', 'Dot'] }></Collapsible>
+      <button onClick={ loadGraph }>Graph</button>
+    </div>
+  </>
   )
 }
 
